@@ -5,6 +5,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>LIVE</title>
 
+	<style>
+		body {
+        background-color: #000000;
+      }
+      #example {
+        top: 50%;
+        left: 50%;
+        width: 30em;
+        height: 18em;
+        transform: translate(-50%, -50%);
+        border: 1px solid #666;
+        background-color: #000000;
+        position: fixed;
+      }
+    </style>
+
 	<link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
     <script src="https://unpkg.com/video.js/dist/video.js"></script>
     <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
@@ -20,7 +36,6 @@
     var player = videojs('my_video_1');
     player.play();
     </script>
-
 
 </body>
 </html>
